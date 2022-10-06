@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function uppercase() {
+		var str = document.fm.str.value;
+		var upperCase = str.toUpperCase();
+		alert(upperCase);
+	}
+	function strlength() {
+		var str = document.fm.str.value;
+		var strLength = str.length;
+		alert(strLength);
+	}
+</script>
+</head>
+
+<body>
+	<form name="fm">
+		<dl>
+			<dt>文字列</dt>
+			<dd>
+				<input type="text" name="str" />
+			</dd>
+		</dl>
+		<input type="button" value="大文字" onclick="uppercase()" /> 
+		<input type="button" value="文字列長" onclick="strlength()" />
+	</form>
+</body>
+</html>

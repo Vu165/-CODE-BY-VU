@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function checknum(){
+		var num = document.fm.num.value
+		if(num%2==0){
+			alert("偶数です。");
+		}else{
+			alert("奇数です。");
+		}
+		
+		if(num<0){
+			alert("負の値です。");
+			document.fm.action = "http://www.mof.go.jp/";
+			document.fm.submit();
+		}
+	}
+</script>
+</head>
+<body>
+<form name="fm">
+		<dl>
+			<dt>数値</dt>
+			<dd>
+				<input type="text" name="num" />
+			</dd>
+		</dl>
+		<input type="button" value="実行" onclick="checknum()" />
+</form>
+</body>
+</html>

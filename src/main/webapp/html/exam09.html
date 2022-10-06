@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function member() {
+		var array = [];
+		var mID = document.fm.memberID.value;
+		var mName = document.fm.memberName.value;
+		var pw = document.fm.password.value;
+		array.push(mID, mName, pw);
+		document.fm.memberID.value = "";
+		document.fm.memberName.value = "";
+		document.fm.password.value = "";
+
+		if (mID == "") {
+			alert("会員IDを入力してください。");
+		}
+
+		if (mName == "") {
+			alert("会員名を入力してください。");
+		}
+
+		if (pw == "") {
+			alert("パスワードを入力してください。");
+		}
+		if (mID != "" && mName != "" && pw != "") {
+			alert("問題ありません。");
+		}
+	}
+</script>
+</head>
+<body>
+<form name="fm">
+		<dl>
+			<dt>会員ID<dt>
+			<dd>
+				<input name="memberID" type="text" />
+			</dd>
+			<dt>会員名<dt>
+			<dd>
+				<input name="memberName" type="text" />
+			</dd>
+			<dt>パスワード<dt>
+			<dd>
+				<input name="password" type="text" />
+			</dd>
+		</dl>
+		<input type="button" value="登録" onclick="member()" /><br />
+	</form>
+</body>
+</html>

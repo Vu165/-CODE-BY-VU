@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function subtraced(){
+	var num1 = parseInt(document.fm.val1.value);
+	var num2 = parseInt(document.fm.val2.value);
+	var subtraced = num1 - num2;
+	alert(subtraced);
+}
+function concat(){
+	var num1 = parseInt(document.fm.val1.value);
+	var num2 = parseInt(document.fm.val2.value);
+	var concat = ""+num1+num2;
+	alert(concat);
+}
+
+</script>
+</head>
+
+<body>
+	<form name="fm">
+		<dl> 
+			<dt>数値1</dt>
+				<dd><input type="text" name="val1"/></dd>
+			<dt>数値2</dt>
+				<dd><input type="text" name="val2"/></dd>
+		</dl>
+		<input type="button" value="減算" onclick="subtraced()"/> 
+		<input type="button" value="連結" onclick="concat()"/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function charat() {
+		var str = document.fm.str.value;
+		var position = parseInt(document.fm.pos.value);
+		var result = str.charAt(position - 1);
+		alert(result);
+	}
+</script>
+</head>
+<body>
+	<form name="fm">
+		<dl>
+			<dt>文字列</dt>
+			<dd>
+				<input type="text" name="str" />
+			</dd>
+			<dt>位置</dt>
+			<dd>
+				<input type="text" name="pos" />
+			</dd>
+		</dl>
+		<input type="button" value="実行" onclick="charat()" />
+</body>
+</html>
